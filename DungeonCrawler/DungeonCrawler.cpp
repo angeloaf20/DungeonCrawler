@@ -1,4 +1,4 @@
-﻿#include <print>
+﻿#include <iostream>
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
@@ -27,7 +27,7 @@ int main(void)
 
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
     {
-        std::println("Failed to initialize GLAD");
+        std::cout << "Failed to initialize GLAD\n";
         return -1;
     }
 
